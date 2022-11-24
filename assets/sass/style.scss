@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import 'blocs/slick';
+
+@import 'blocs/header';
+@import 'blocs/main';
+@import 'blocs/signs';
+@import 'blocs/structure';
+@import 'blocs/attention';
+@import 'blocs/doctor';
+@import 'blocs/about';
+@import 'blocs/reviews';
+@import 'blocs/footer';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: url(../../assets/img/bg.png), #fafafa;
+}
+
+.container {
+    width: 1230px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.title {
+    font-weight: 300;
+    font-size: 42px;
+    text-align: center;
+    color: #000;
+
+    &__fz26 {
+        font-size: 26px;
+        text-align: center;
+        color: #7d7d7d;
+        margin-top: 20px;
+    }
+
+    &__fz22 {
+        font-weight: 300;
+        font-size: 22px;
+        text-align: center;
+        color: #000;
+    }
+}
+
+.slick-next,
+.slick-prev {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    width: 186px;
+    height: 70px;
+    background: #f7efeb;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: -100px;
+    position: absolute;
+    &:focus {
+        outline: 0;
+        outline-offset: 0;
+    }
+}
+.slick-prev {
+    left: 20%;
+    @media (max-width: 768px) {
+        left: 10%;
+    }
+    @media (max-width: 576px) {
+        left: 0%;
+    }
+}
+.slick-next {
+    right: 20%;
+    @media (max-width: 768px) {
+        right: 10%;
+    }
+    @media (max-width: 576px) {
+        right: 0;
+    }
+}
+
+@import 'blocs/media';
